@@ -1,8 +1,15 @@
 #include <iostream>
+#include <stdexcept>
 
 #include "maxmin.h"
 
-void maxmin (int* arr, int start, int end, int* local_max_ptr, int* local_min_ptr) {
+void maxmin(int* arr, int start, int end, int* local_max_ptr, int* local_min_ptr) {
+    if (start >= end) {
+        *local_max_ptr = arr[start];
+        *local_min_ptr = arr[start];
+        return;
+    }
+    
     int local_max = arr[start];
     int local_min = arr[start];
 
