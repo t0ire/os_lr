@@ -1,0 +1,95 @@
+execve("./program1", ["./program1"], 0x7ffd0203fde0 /* 49 vars */) = 0
+brk(NULL)                               = 0x5f68fa012000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71d6c4854000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/home/toire/workspace/os_lr/lab4/build/glibc-hwcaps/x86-64-v3/liblib1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+newfstatat(AT_FDCWD, "/home/toire/workspace/os_lr/lab4/build/glibc-hwcaps/x86-64-v3/", 0x7fffb6972e50, 0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/home/toire/workspace/os_lr/lab4/build/glibc-hwcaps/x86-64-v2/liblib1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+newfstatat(AT_FDCWD, "/home/toire/workspace/os_lr/lab4/build/glibc-hwcaps/x86-64-v2/", 0x7fffb6972e50, 0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/home/toire/workspace/os_lr/lab4/build/liblib1.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0775, st_size=15256, ...}) = 0
+mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71d6c484f000
+mmap(0x71d6c4850000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71d6c4850000
+mmap(0x71d6c4851000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71d6c4851000
+mmap(0x71d6c4852000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71d6c4852000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/toire/workspace/os_lr/lab4/build/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=56203, ...}) = 0
+mmap(NULL, 56203, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71d6c4841000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=2592224, ...}) = 0
+mmap(NULL, 2609472, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71d6c4400000
+mmap(0x71d6c449d000, 1343488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9d000) = 0x71d6c449d000
+mmap(0x71d6c45e5000, 552960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e5000) = 0x71d6c45e5000
+mmap(0x71d6c466c000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26b000) = 0x71d6c466c000
+mmap(0x71d6c467a000, 12608, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71d6c467a000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/toire/workspace/os_lr/lab4/build/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=183024, ...}) = 0
+mmap(NULL, 185256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71d6c4813000
+mmap(0x71d6c4817000, 147456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71d6c4817000
+mmap(0x71d6c483b000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x71d6c483b000
+mmap(0x71d6c483f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x71d6c483f000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/toire/workspace/os_lr/lab4/build/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71d6c4000000
+mmap(0x71d6c4028000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x71d6c4028000
+mmap(0x71d6c41b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x71d6c41b0000
+mmap(0x71d6c41ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x71d6c41ff000
+mmap(0x71d6c4205000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71d6c4205000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=952616, ...}) = 0
+mmap(NULL, 950296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71d6c472a000
+mmap(0x71d6c473a000, 520192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x71d6c473a000
+mmap(0x71d6c47b9000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8f000) = 0x71d6c47b9000
+mmap(0x71d6c4811000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x71d6c4811000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71d6c4728000
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71d6c4725000
+arch_prctl(ARCH_SET_FS, 0x71d6c4725740) = 0
+set_tid_address(0x71d6c4725a10)         = 15340
+set_robust_list(0x71d6c4725a20, 24)     = 0
+rseq(0x71d6c4726060, 0x20, 0, 0x53053053) = 0
+mprotect(0x71d6c41ff000, 16384, PROT_READ) = 0
+mprotect(0x71d6c4811000, 4096, PROT_READ) = 0
+mprotect(0x71d6c483f000, 4096, PROT_READ) = 0
+mprotect(0x71d6c466c000, 45056, PROT_READ) = 0
+mprotect(0x71d6c4852000, 4096, PROT_READ) = 0
+mprotect(0x5f68e6514000, 4096, PROT_READ) = 0
+mprotect(0x71d6c4892000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x71d6c4841000, 56203)           = 0
+futex(0x71d6c467a7bc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getrandom("\x7b\xc8\xba\x8d\xc7\x59\x48\x5e", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x5f68fa012000
+brk(0x5f68fa033000)                     = 0x5f68fa033000
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+write(1, "  0 - \320\270\320\275\321\204\320\276\321\200\320\274\320\260\321\206\320\270\321\217\n", 27) = 27
+write(1, "  1 [\320\264\320\273\320\270\320\275\320\260]\n", 17) = 17
+write(1, "  2 [\320\274\320\260\321\201\321\201\320\270\320\262]\n", 19) = 19
+write(1, "  exit - \320\262\321\213\321\205\320\276\320\264\n", 20) = 20
+write(1, "\n", 1)                       = 1
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+read(0, "1 6\n", 1024)                  = 4
+write(1, "Pi(6) = 2.97605\n", 16)       = 16
+write(1, "\n", 1)                       = 1
+read(0, "2 9 9495 6 4 3 6 3 5 3\n", 1024) = 23
+write(1, "\320\274\320\260\321\201\321\201\320\270\320\262: [9, 9495, 6, 4, 3,"..., 45) = 45
+write(1, "o\321\202\321\201\320\276\321\200\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\275\321\213\320\271 \320\274"..., 75) = 75
+write(1, "\n", 1)                       = 1
+read(0, "exit\n", 1024)                 = 5
+exit_group(0)                           = ?
++++ exited with 0 +++
